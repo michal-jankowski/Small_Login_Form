@@ -1,0 +1,172 @@
+/*********************
+GENERAL
+**********************/
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font: normal 1em/1.5 'Dosis', sans-serif;
+	color: #adaeb7;
+	background-color: #e8e6e8;
+}
+
+.hide {
+	text-indent: -999em;
+	height: 0px;
+	margin: 0;
+	padding: 0;
+}
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*********************
+FORM
+**********************/
+form {
+	width: 500px;
+	height: 400px;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.4);
+    -moz-box-shadow:    0px 0px 10px rgba(100, 100, 100, 0.4);
+    box-shadow:         0px 0px 10px rgba(100, 100, 100, 0.4);
+	position: relative;
+	top: 45%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.logo {
+	margin-top: 15px;
+}
+
+h2 {
+	font-size: 1.625em;
+	font-weight: 300;
+	margin: 0;
+}
+
+h2 span {
+	font-weight: 400;
+}
+
+.introduction {
+	font-size: 0.875em;
+	margin-top: 5px;
+}
+
+.input-box {
+	text-align: center;
+	width: 370px;
+	margin: 25px auto 0;
+}
+
+input {
+	font-size: 1.375em;
+	color: #000;
+	padding-top: 6px;
+	padding-bottom: 10px;
+	display: block;
+	width: 100%;
+	border: 1px solid rgba(100, 100, 100, 0.4);
+	border-radius: 5px;
+	margin-bottom: 18px;
+	padding-left: 50px;
+}
+
+#login {
+	background: url(../img/1.png) no-repeat 10px 4px;
+}
+
+#password {
+	background: url(../img/2.png) no-repeat 10px 4px;
+}
+
+input:focus {
+	border: 1px solid #64a6eb;
+	-webkit-box-shadow: 0px 0px 1px #64a6eb;
+    -moz-box-shadow:    0px 0px 1px #64a6eb;
+    box-shadow:         0px 0px 1px #64a6eb;
+}
+
+input::-webkit-input-placeholder {
+	color: #000;
+	opacity: 0.8;
+}
+input::-moz-placeholder {
+	color: #000;
+	opacity: 0.8;
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+	color: #000;
+	opacity: 0.8;
+}
+input:-ms-input-placeholder { 
+	color: #000;
+	opacity: 0.8;
+}
+
+.credentials-box {
+	position: relative;
+	width: 370px;
+	margin: 0 auto;
+}
+
+.password-recovery {
+	text-align: left;
+	padding: 5px;
+	margin-top: -10px;
+	margin-left: 15px;
+}
+
+.password-recovery {
+	font-size: 0.875em;
+}
+
+.password-recovery a {
+	color: #64a6eb;
+}
+
+.password-recovery a:hover {
+	color: #228b22;
+}
+
+button {
+	font-size: 1.125em;
+	font-weight: 600;
+	color: #fff;
+	padding: 9px 19px 10px 19px;
+	border: none;
+	border-radius: 5px;
+	background-image: -webkit-linear-gradient(top, #69aff8 0%, #4e82b8 50%);
+	background: linear-gradient(#69aff8, #4e82b8);
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+
+button:hover {
+	background: #228b22;
+}
+
+button:focus {
+	outline: none;
+}
